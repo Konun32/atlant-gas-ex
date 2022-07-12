@@ -29,7 +29,14 @@ $(document).ready(function(){
 		arrows: true,
 		dots: true,
 		centerMode: true,
-		//slidesToShow: 1,
-		//variableWidth: true
+		slidesToShow: 1,
+		responsive: [
+			{
+				breakpoint: 600,
+				settings: {
+					arrows: false,
+				}
+			},
+		]
 	});
 });

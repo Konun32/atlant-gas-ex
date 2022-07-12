@@ -1577,7 +1577,7 @@
 		color: #1B2639;
 	}
 	&__map {
-		max-width: 570px;
+		flex: 1 1 50%;
 	}
 }
 @media (max-width: 1130px) {

@@ -1820,6 +1820,9 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
   }
   .location__map {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 0px;
+            flex: 0 0 0;
     max-width: 100%;
   }
 }

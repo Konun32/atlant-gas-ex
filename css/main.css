@@ -345,7 +345,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 58%;
   -webkit-transform: translate(200%, 0);
           transform: translate(200%, 0);
-  opacity: 0;
+  opacity: 1;
 }
 .main-block__img._active {
   opacity: 1;
@@ -599,7 +599,7 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
-  lline-height: 137.5%;
+  line-height: 137.5%;
   color: #F1F1F1;
   opacity: 0;
   -webkit-transform: translate(0, 100%);
@@ -1693,9 +1693,9 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-  -webkit-box-align: top;
-      -ms-flex-align: top;
-          align-items: top;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 .request__body {
   max-width: 567px;
@@ -2339,9 +2339,9 @@ h1, h2, h3, h4, h5, h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: top;
-      -ms-flex-align: top;
-          align-items: top;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;

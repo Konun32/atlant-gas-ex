@@ -99,11 +99,12 @@ document.addEventListener('keydown', function(e) {
 })
 
 // Полифилы
-/*(function () {
+/*(function() {
+
 	// проверяем поддержку
 	if (!Element.prototype.closest) {
 		// реализуем
-		Element.prototype.closest = function (css) {
+		Element.prototype.closest = function(css) {
 			var node = this;
 			while (node) {
 				if (node.matches(css)) return node;

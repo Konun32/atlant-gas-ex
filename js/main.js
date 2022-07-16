@@ -1,5 +1,5 @@
 
-//"use strict"
+"use strict"
 
 //switching buttons
 let buttons = document.querySelectorAll(".volume__button");
@@ -15,9 +15,9 @@ if (buttons.length > 0) {
 				}
 			}
 			if (document.documentElement.clientWidth > 625) {
-				document.querySelector('.volume__slider-line').style.marginLeft = `${-596*(index-image)}px`;
+				document.querySelector('.volume__slider-line').style.marginLeft = (-596*(index-image))+'px';
 			} else {
-				document.querySelector('.volume__slider-line').style.marginLeft = `${-93*(index-image)}vw`;
+				document.querySelector('.volume__slider-line').style.marginLeft = (-93*(index-image))+'vw';
 			}
 			button.classList.add("volume__button_active");
 		})
@@ -158,11 +158,12 @@ document.addEventListener('keydown', function(e) {
 })
 
 // Полифилы
-/*(function () {
+/*(function() {
+
 	// проверяем поддержку
 	if (!Element.prototype.closest) {
 		// реализуем
-		Element.prototype.closest = function (css) {
+		Element.prototype.closest = function(css) {
 			var node = this;
 			while (node) {
 				if (node.matches(css)) return node;
@@ -182,7 +183,7 @@ document.addEventListener('keydown', function(e) {
 			Element.prototype.msMatchesSelector;
 	}
 })();*/
-const animItems = document.querySelectorAll('._anim-item');
+const animItems = document.getElementsByClassName('_anim-item');
 
 if (animItems.length > 0) {
 	window.addEventListener('scroll', animOnScroll);

@@ -1,4 +1,4 @@
-//"use strict"
+"use strict"
 
 //switching buttons
 let buttons = document.querySelectorAll(".volume__button");
@@ -14,9 +14,9 @@ if (buttons.length > 0) {
 				}
 			}
 			if (document.documentElement.clientWidth > 625) {
-				document.querySelector('.volume__slider-line').style.marginLeft = `${-596*(index-image)}px`;
+				document.querySelector('.volume__slider-line').style.marginLeft = (-596*(index-image))+'px';
 			} else {
-				document.querySelector('.volume__slider-line').style.marginLeft = `${-93*(index-image)}vw`;
+				document.querySelector('.volume__slider-line').style.marginLeft = (-93*(index-image))+'vw';
 			}
 			button.classList.add("volume__button_active");
 		})

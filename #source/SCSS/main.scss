@@ -1159,9 +1159,10 @@
 	&__slid {
 		position: relative;
 		min-height: 320px;
+		height: 100%;
 	}
 	&__slid-body {
-		position: absolute;
+		position: relative;
 		width: 759px;
 		min-height: 320px;
 		display: grid;

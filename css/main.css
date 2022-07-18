@@ -1391,9 +1391,10 @@ h1, h2, h3, h4, h5, h6 {
 .reviews__slid {
   position: relative;
   min-height: 320px;
+  height: 100%;
 }
 .reviews__slid-body {
-  position: absolute;
+  position: relative;
   width: 759px;
   min-height: 320px;
   display: -ms-grid;

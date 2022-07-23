@@ -709,11 +709,13 @@ h1, h2, h3, h4, h5, h6 {
   }
   .price__img img {
     position: absolute;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     height: 100%;
     top: 0;
-    left: 0;
-    -o-object-fit: cover;
-       object-fit: cover;
+    left: 50%;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 }
 
@@ -746,6 +748,11 @@ h1, h2, h3, h4, h5, h6 {
   }
   .price__title:not(:last-child) {
     margin-bottom: 15px;
+  }
+  .price__img img {
+    left: 0;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 
   .title {
@@ -2451,6 +2458,8 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 120.8333333333%;
   text-align: center;
   color: #F1F1F1;
+  -webkit-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
 }
 .popup__button:before {
   content: "";
@@ -2463,6 +2472,8 @@ h1, h2, h3, h4, h5, h6 {
   margin: 10px 9px 0 9px;
   top: 0;
   left: 0;
+  -webkit-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
 }
 .popup__button:after {
   content: "";
@@ -2475,10 +2486,21 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 9px 8px 11px;
   bottom: 0;
   left: 0;
+  -webkit-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
 }
 .popup__button span {
   position: relative;
   z-index: 11;
+}
+.popup__button:hover {
+  -webkit-box-shadow: inset 0px 4px 15px rgba(0, 0, 0, 0.75);
+          box-shadow: inset 0px 4px 15px rgba(0, 0, 0, 0.75);
+}
+.popup__button:hover:after, .popup__button:hover:before {
+  opacity: 0;
+  -webkit-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
 }
 .popup__title {
   font-family: "Russo One";
